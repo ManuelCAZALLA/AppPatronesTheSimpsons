@@ -23,9 +23,9 @@ final class SplashViewModel {
     
     private func loadData() {
         viewDelegate?.activityLoading(true)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) { [weak self] in
             self?.viewDelegate?.activityLoading(false)
-            self?.viewDelegate?.navigateTostartingScreen()
+            self?.viewDelegate?.navigateToStartingScreen()
             
         }
     }

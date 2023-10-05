@@ -9,29 +9,27 @@ import UIKit
 
 //MARK: - PROTOCOLO
 protocol SplashViewProtocol: AnyObject {
-    func navigateTostartingScreen()
     func activityLoading(_ activity: Bool)
+    func navigateToStartingScreen()
 }
 
 //MARK: - CLASE
 class SplashViewController : UIViewController {
     
     //MARK: - IBOutlets
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var conectViewModel: SplashViewModelProtocol?
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        conectViewModel = SplashViewModel(viewDelegate: self)
         conectViewModel?.viewsAreLoaded()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+      }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
         activityIndicator.stopAnimating()
     }
-    
 }
     
 //MARK: - EXTENSION
@@ -51,8 +49,9 @@ extension SplashViewController: SplashViewProtocol {
         
     }
     // NAVEGAR A LA PANTALLA DE INICIO
-    func navigateTostartingScreen() {
+    func navigateToStartingScreen() {
         let startingScreen = StartingScreenTableViewController()
+        startingScreen.connectViewModel = StartingScreenViewModel(viewDelegate: startingScreen)
         navigationController?.setViewControllers([startingScreen], animated: true)
         
     }

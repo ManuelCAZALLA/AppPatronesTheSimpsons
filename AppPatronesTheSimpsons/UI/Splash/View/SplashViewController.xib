@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="AppPatronesTheSimpsons" customModuleProvider="target">
             <connections>
-                <outlet property="activityIndicator" destination="gWM-qN-FGS" id="s5b-gZ-Od5"/>
+                <outlet property="activityIndicator" destination="gWM-qN-FGS" id="mim-MD-3Hx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
