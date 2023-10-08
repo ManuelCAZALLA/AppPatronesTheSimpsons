@@ -12,7 +12,7 @@ typealias DataSimpsons = [DataModel]
 struct DataModel {
     var name: String
     var job: String
-    var image: String?
+    var image: String
     var description: String
 }
 

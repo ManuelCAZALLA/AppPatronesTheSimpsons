@@ -75,9 +75,12 @@ extension StartingScreenTableViewController: StartingScreenProtocol {
     
     func navigateToDetail(with data: DataModel?) {
         let detailVC = DetailViewController()
+        guard let data else {return}
+        detailVC.conectDetailViewModel = DetailViewModel(viewData: data, viewDelegate: detailVC)
         navigationController?.pushViewController(detailVC, animated: true)
     }
     
-    
 }
+    
+
    

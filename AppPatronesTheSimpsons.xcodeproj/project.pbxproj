@@ -22,6 +22,7 @@
 		3C67123E2ACEBD9400A4FAC7 /* StartingScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C67123C2ACEBD9400A4FAC7 /* StartingScreenTableViewCell.xib */; };
 		3C6712442ACF112800A4FAC7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6712422ACF112800A4FAC7 /* DetailViewController.swift */; };
 		3C6712452ACF112800A4FAC7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6712432ACF112800A4FAC7 /* DetailViewController.xib */; };
+		3CA745B42AD1C1F300ADCD9D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA745B32AD1C1F300ADCD9D /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		3C67123C2ACEBD9400A4FAC7 /* StartingScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartingScreenTableViewCell.xib; sourceTree = "<group>"; };
 		3C6712422ACF112800A4FAC7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3C6712432ACF112800A4FAC7 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3CA745B32AD1C1F300ADCD9D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +105,9 @@
 		3C6712292ACDD0A600A4FAC7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				3C6712412ACF10FB00A4FAC7 /* Detail */,
-				3C6712302ACDDBC700A4FAC7 /* Starting screen */,
 				3C67122A2ACDD0BF00A4FAC7 /* Splash */,
+				3C6712302ACDDBC700A4FAC7 /* Starting screen */,
+				3C6712412ACF10FB00A4FAC7 /* Detail */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -208,10 +210,35 @@
 		3C6712412ACF10FB00A4FAC7 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				3C6712422ACF112800A4FAC7 /* DetailViewController.swift */,
-				3C6712432ACF112800A4FAC7 /* DetailViewController.xib */,
+				3C6712462ACF313600A4FAC7 /* View */,
+				3C6712472ACF313D00A4FAC7 /* Controller */,
+				3C6712482ACF314600A4FAC7 /* ViewModel */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		3C6712462ACF313600A4FAC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C6712432ACF112800A4FAC7 /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C6712472ACF313D00A4FAC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C6712422ACF112800A4FAC7 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C6712482ACF314600A4FAC7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CA745B32AD1C1F300ADCD9D /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +318,7 @@
 				3C6712442ACF112800A4FAC7 /* DetailViewController.swift in Sources */,
 				3C67122F2ACDD68300A4FAC7 /* SplashViewModel.swift in Sources */,
 				3C67123D2ACEBD9400A4FAC7 /* StartingScreenTableViewCell.swift in Sources */,
+				3CA745B42AD1C1F300ADCD9D /* DetailViewModel.swift in Sources */,
 				3C6712332ACDDC5A00A4FAC7 /* StartingScreenTableViewController.swift in Sources */,
 				3C6712392ACEBD5D00A4FAC7 /* StartingScreenViewModel.swift in Sources */,
 				3C6712222ACD83F000A4FAC7 /* DataModel.swift in Sources */,
