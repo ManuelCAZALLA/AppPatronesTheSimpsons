@@ -17,7 +17,7 @@ protocol StartingScreenProtocol: AnyObject{
 // MARK: - CLASE
 class StartingScreenTableViewController: UITableViewController {
     
-    var connectViewModel: StartingScreenViewModelProtocol?
+   var connectViewModel: StartingScreenViewModelProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
