@@ -8,7 +8,8 @@
 import UIKit
 
 class StartingScreenTableViewCell: UITableViewCell {
-
+    //MARK: IBOUTLET
+   
     @IBOutlet weak var viewCell: UIView!
     @IBOutlet weak var nameCell: UILabel!
     @IBOutlet weak var imageCell: UIImageView!

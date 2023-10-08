@@ -43,7 +43,6 @@ class StartingScreenTableViewController: UITableViewController {
         connectViewModel?.dataCount ?? 0
     }
     
-    
     override func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -75,8 +74,7 @@ extension StartingScreenTableViewController: StartingScreenProtocol {
     
     func navigateToDetail(with data: DataModel?) {
         let detailVC = DetailViewController()
-        guard let data else {return}
-        detailVC.conectDetailViewModel = DetailViewModel(viewData: data, viewDelegate: detailVC)
+       detailVC.conectDetailViewModel = DetailViewModel(viewData: data, viewDelegate: detailVC)
         navigationController?.pushViewController(detailVC, animated: true)
     }
     

@@ -26,9 +26,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         conectDetailViewModel?.fetchData()
-        
-       
-    }
+        }
     
     private func update(name: String?) {
         nameDetail.text = name ?? ""

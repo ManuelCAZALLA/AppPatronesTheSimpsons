@@ -25,18 +25,16 @@ final class DetailViewModel {
     }
     
     private func loadData() {
+        guard let viewData else {return}
         viewDelegate?.updateView(data: viewData)
        
     }
    
 }
-
-   
-       
 //MARK: EXTENSION
+
 extension DetailViewModel: DetailViewModelProtocol {
-   
-    func fetchData() {
+   func fetchData() {
        loadData()
         
     }

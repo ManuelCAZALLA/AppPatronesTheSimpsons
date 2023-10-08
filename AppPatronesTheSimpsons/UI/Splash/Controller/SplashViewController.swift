@@ -16,7 +16,7 @@ protocol SplashViewProtocol: AnyObject {
 //MARK: - CLASE
 class SplashViewController : UIViewController {
     
-    //MARK: - IBOutlets
+    
     
     var conectViewModel: SplashViewModelProtocol?
     
@@ -35,9 +35,8 @@ class SplashViewController : UIViewController {
 //MARK: - EXTENSION
 
 extension SplashViewController: SplashViewProtocol {
-    // CARGAR ACTIVITY INDICATOR
-   
-    func activityLoading(_ activity: Bool) {
+    //  ACTIVITY INDICATOR
+   func activityLoading(_ activity: Bool) {
         switch activity {
         case true where !activityIndicator.isAnimating:
             activityIndicator.startAnimating()
